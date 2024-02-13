@@ -55,6 +55,12 @@ build CMakeFiles/Assignment1.dir/Excercise10.cpp.obj: CXX_COMPILER__Assignment1_
   OBJECT_DIR = CMakeFiles\Assignment1.dir
   OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
 
+build CMakeFiles/Assignment1.dir/LabTask2.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/LabTask2.cpp || cmake_object_order_depends_target_Assignment1
+  DEP_FILE = CMakeFiles\Assignment1.dir\LabTask2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Assignment1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Assignment1
@@ -63,7 +69,7 @@ build CMakeFiles/Assignment1.dir/Excercise10.cpp.obj: CXX_COMPILER__Assignment1_
 #############################################
 # Link the executable Assignment1.exe
 
-build Assignment1.exe: CXX_EXECUTABLE_LINKER__Assignment1_Debug CMakeFiles/Assignment1.dir/Excercise10.cpp.obj
+build Assignment1.exe: CXX_EXECUTABLE_LINKER__Assignment1_Debug CMakeFiles/Assignment1.dir/Excercise10.cpp.obj CMakeFiles/Assignment1.dir/LabTask2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Assignment1.dir
