@@ -8,4 +8,6 @@ add_executable(Assignment1 Excercise10.cpp
         Lab2Task2.cpp
         minheap.cpp
         maxheap.cpp
+        Assignment2_qn5.cpp
+        Assignment2_qn8.cpp
 )
