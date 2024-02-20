@@ -10,4 +10,5 @@ add_executable(Assignment1 Excercise10.cpp
         maxheap.cpp
         Assignment2_qn5.cpp
         Assignment2_qn8.cpp
+        Lab3Task.cpp
 )
