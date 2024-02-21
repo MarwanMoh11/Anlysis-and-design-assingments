@@ -8,7 +8,7 @@
 using namespace std;
 
 struct Jobs{
-    int id;
+    char id;
     int deadline;
     int profit;
 
@@ -22,23 +22,32 @@ struct Jobs{
 
 void maxprofit(int maxdeadline, vector<Jobs> arr[]){
     sort(arr->begin(), arr->end());
+    int day = 1;
 
     for(const auto& Jobs: *arr){
-        cout << Jobs.profit << endl;
+        while (day<=maxdeadline){
+        if (day <= Jobs.deadline && day <= Jobs.deadline){
+            cout << "The job " << Jobs.id  << " is done before day " << day << " for a profit of " << Jobs.profit << endl;
+            day++;
+            break;
+
+        }
+        }
 
     }
+
 
 }
 
 
 int main(){
 
-    vector<Jobs> arr = {{2,2,10},
-                        {2,2,20},
-                        {2,2,12},
-                        {2,2,7}};
+    vector<Jobs> arr = {{'a',3,10},
+                        {'b',3,20},
+                        {'c',3,12},
+                        {'d',3,7}};
 
-    maxprofit(2,&arr);
+    maxprofit(3,&arr);
 
     return 0;
 }
