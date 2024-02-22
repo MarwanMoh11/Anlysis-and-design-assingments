@@ -117,5 +117,6 @@ int main()
     int size = sizeof(data) / sizeof(data[0]);
 
     HuffmanCodes(data, freq, size);
+
     return 0;
 }

@@ -25,14 +25,13 @@ void maxprofit(int maxdeadline, vector<Jobs> arr[]){
     int day = 1;
 
     for(const auto& Jobs: *arr){ // going over the whole vector
-        while (day<=maxdeadline){ // while we did not reach the max deadline keep the code running
-        if (day <= Jobs.deadline && day <= Jobs.deadline){ // if the deadline of specific job fits criteria pick it based on value
+        if (day <= maxdeadline& day <= Jobs.deadline){ // if the deadline of specific job fits criteria pick it based on value
             cout << "The job " << Jobs.id  << " is done before day " << day << " for a profit of " << Jobs.profit << endl;
             day++;
-            break;
+
 
         }
-        }
+
 
     }
 
@@ -42,10 +41,11 @@ void maxprofit(int maxdeadline, vector<Jobs> arr[]){
 
 int main(){
 
-    vector<Jobs> arr = {{'a',3,10},
-                        {'b',3,20},
-                        {'c',3,12},
-                        {'d',3,7}};
+    vector<Jobs> arr = {{'a',2,20},
+                        {'b',2,15},
+                        {'c',1,21},
+                        {'d',3,5},
+                        {'e',3,1}};
 
     maxprofit(3,&arr);
 
