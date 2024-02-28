@@ -12,4 +12,5 @@ add_executable(Assignment1 Excercise10.cpp
         Assignment2_qn8.cpp
         Lab3Task1.cpp
         Lab3Task2.cpp
+        Lab4.cpp
 )
