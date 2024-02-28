@@ -109,6 +109,12 @@ build CMakeFiles/Assignment1.dir/Lab4.cpp.obj: CXX_COMPILER__Assignment1_unscann
   OBJECT_DIR = CMakeFiles\Assignment1.dir
   OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
 
+build CMakeFiles/Assignment1.dir/Midterm_revision.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Midterm$ revision.cpp || cmake_object_order_depends_target_Assignment1
+  DEP_FILE = CMakeFiles\Assignment1.dir\Midterm_revision.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Assignment1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Assignment1
@@ -117,7 +123,7 @@ build CMakeFiles/Assignment1.dir/Lab4.cpp.obj: CXX_COMPILER__Assignment1_unscann
 #############################################
 # Link the executable Assignment1.exe
 
-build Assignment1.exe: CXX_EXECUTABLE_LINKER__Assignment1_Debug CMakeFiles/Assignment1.dir/Excercise10.cpp.obj CMakeFiles/Assignment1.dir/Lab2Task1.cpp.obj CMakeFiles/Assignment1.dir/Lab2Task2.cpp.obj CMakeFiles/Assignment1.dir/minheap.cpp.obj CMakeFiles/Assignment1.dir/maxheap.cpp.obj CMakeFiles/Assignment1.dir/Assignment2_qn5.cpp.obj CMakeFiles/Assignment1.dir/Assignment2_qn8.cpp.obj CMakeFiles/Assignment1.dir/Lab3Task1.cpp.obj CMakeFiles/Assignment1.dir/Lab3Task2.cpp.obj CMakeFiles/Assignment1.dir/Lab4.cpp.obj
+build Assignment1.exe: CXX_EXECUTABLE_LINKER__Assignment1_Debug CMakeFiles/Assignment1.dir/Excercise10.cpp.obj CMakeFiles/Assignment1.dir/Lab2Task1.cpp.obj CMakeFiles/Assignment1.dir/Lab2Task2.cpp.obj CMakeFiles/Assignment1.dir/minheap.cpp.obj CMakeFiles/Assignment1.dir/maxheap.cpp.obj CMakeFiles/Assignment1.dir/Assignment2_qn5.cpp.obj CMakeFiles/Assignment1.dir/Assignment2_qn8.cpp.obj CMakeFiles/Assignment1.dir/Lab3Task1.cpp.obj CMakeFiles/Assignment1.dir/Lab3Task2.cpp.obj CMakeFiles/Assignment1.dir/Lab4.cpp.obj CMakeFiles/Assignment1.dir/Midterm_revision.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Assignment1.dir
