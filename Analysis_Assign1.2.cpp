@@ -1,11 +1,10 @@
 //
-// Created by Marwan on 2/21/2024.
+// Created by Marwan on 3/3/2024.
 //
-// C++ Program for Huffman Coding using Priority Queue
 #include <iostream>
 #include <queue>
-#include <fstream>
 #include <sstream>
+#include <fstream>
 using namespace std;
 
 #define MAX_SIZE 100 // Maximum Height of Huffman Tree.
@@ -158,15 +157,12 @@ void HuffmanCodestxt(string path)
 }
 
 
-int main()
-{
-    char data[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
-    int freq[] = { 15, 29, 13, 14, 17, 45 };
-    int size = sizeof(data) / sizeof(data[0]);
-
-    HuffmanCodestxt("input.txt");
-    HuffmanCodes(data,freq,size);
 
 
-    return 0;
-}
+
+
+
+
+
+
+

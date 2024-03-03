@@ -14,4 +14,6 @@ add_executable(Assignment1 Excercise10.cpp
         Lab3Task2.cpp
         Lab4.cpp
         "Midterm revision.cpp"
+        Analysis_Assign1.1.cpp
+        Analysis_Assign1.2.cpp
 )
