@@ -41,109 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/C++/Assignment1/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Assignment1
+# Object build statements for EXECUTABLE target Analysis_Assign1.2
 
 
 #############################################
-# Order-only phony target for Assignment1
+# Order-only phony target for Analysis_Assign1.2
 
-build cmake_object_order_depends_target_Assignment1: phony || CMakeFiles/Assignment1.dir
+build cmake_object_order_depends_target_Analysis_Assign1.2: phony || CMakeFiles/Analysis_Assign1.2.dir
 
-build CMakeFiles/Assignment1.dir/Excercise10.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Excercise10.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Excercise10.cpp.obj.d
+build CMakeFiles/Analysis_Assign1.2.dir/Analysis_Assign1.2.cpp.obj: CXX_COMPILER__Analysis_Assign1.2e2_unscanned_Debug D$:/C++/Assignment1/Analysis_Assign1.2.cpp || cmake_object_order_depends_target_Analysis_Assign1.2
+  DEP_FILE = CMakeFiles\Analysis_Assign1.2.dir\Analysis_Assign1.2.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
+  OBJECT_DIR = CMakeFiles\Analysis_Assign1.2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Analysis_Assign1.2.dir
 
-build CMakeFiles/Assignment1.dir/Lab2Task1.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Lab2Task1.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Lab2Task1.cpp.obj.d
+build CMakeFiles/Analysis_Assign1.2.dir/Lab5Task0.cpp.obj: CXX_COMPILER__Analysis_Assign1.2e2_unscanned_Debug D$:/C++/Assignment1/Lab5Task0.cpp || cmake_object_order_depends_target_Analysis_Assign1.2
+  DEP_FILE = CMakeFiles\Analysis_Assign1.2.dir\Lab5Task0.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Lab2Task2.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Lab2Task2.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Lab2Task2.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/minheap.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/minheap.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\minheap.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/maxheap.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/maxheap.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\maxheap.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Assignment2_qn5.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Assignment2_qn5.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Assignment2_qn5.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Assignment2_qn8.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Assignment2_qn8.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Assignment2_qn8.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Lab3Task1.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Lab3Task1.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Lab3Task1.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Lab3Task2.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Lab3Task2.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Lab3Task2.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Lab4.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Lab4.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Lab4.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Midterm_revision.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Midterm$ revision.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Midterm_revision.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Analysis_Assign1.1.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Analysis_Assign1.1.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Analysis_Assign1.1.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
-
-build CMakeFiles/Assignment1.dir/Analysis_Assign1.2.cpp.obj: CXX_COMPILER__Assignment1_unscanned_Debug D$:/C++/Assignment1/Analysis_Assign1.2.cpp || cmake_object_order_depends_target_Assignment1
-  DEP_FILE = CMakeFiles\Assignment1.dir\Analysis_Assign1.2.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment1.dir
+  OBJECT_DIR = CMakeFiles\Analysis_Assign1.2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Analysis_Assign1.2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Assignment1
+# Link build statements for EXECUTABLE target Analysis_Assign1.2
 
 
 #############################################
-# Link the executable Assignment1.exe
+# Link the executable Analysis_Assign1.2.exe
 
-build Assignment1.exe: CXX_EXECUTABLE_LINKER__Assignment1_Debug CMakeFiles/Assignment1.dir/Excercise10.cpp.obj CMakeFiles/Assignment1.dir/Lab2Task1.cpp.obj CMakeFiles/Assignment1.dir/Lab2Task2.cpp.obj CMakeFiles/Assignment1.dir/minheap.cpp.obj CMakeFiles/Assignment1.dir/maxheap.cpp.obj CMakeFiles/Assignment1.dir/Assignment2_qn5.cpp.obj CMakeFiles/Assignment1.dir/Assignment2_qn8.cpp.obj CMakeFiles/Assignment1.dir/Lab3Task1.cpp.obj CMakeFiles/Assignment1.dir/Lab3Task2.cpp.obj CMakeFiles/Assignment1.dir/Lab4.cpp.obj CMakeFiles/Assignment1.dir/Midterm_revision.cpp.obj CMakeFiles/Assignment1.dir/Analysis_Assign1.1.cpp.obj CMakeFiles/Assignment1.dir/Analysis_Assign1.2.cpp.obj
+build Analysis_Assign1.2.exe: CXX_EXECUTABLE_LINKER__Analysis_Assign1.2e2_Debug CMakeFiles/Analysis_Assign1.2.dir/Analysis_Assign1.2.cpp.obj CMakeFiles/Analysis_Assign1.2.dir/Lab5Task0.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Assignment1.dir
+  OBJECT_DIR = CMakeFiles\Analysis_Assign1.2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Assignment1.exe
-  TARGET_IMPLIB = libAssignment1.dll.a
-  TARGET_PDB = Assignment1.exe.dbg
+  TARGET_FILE = Analysis_Assign1.2.exe
+  TARGET_IMPLIB = libAnalysis_Assign1.2.dll.a
+  TARGET_PDB = Analysis_Assign1.2.exe.dbg
 
 
 #############################################
@@ -171,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Assignment1: phony Assignment1.exe
+build Analysis_Assign1.2: phony Analysis_Assign1.2.exe
 
 # =============================================================================
 # Folder targets.
@@ -181,7 +115,7 @@ build Assignment1: phony Assignment1.exe
 #############################################
 # Folder: D:/C++/Assignment1/cmake-build-debug
 
-build all: phony Assignment1.exe
+build all: phony Analysis_Assign1.2.exe
 
 # =============================================================================
 # Built-in targets

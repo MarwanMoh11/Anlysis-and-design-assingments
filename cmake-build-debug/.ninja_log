@@ -1,4 +1,21 @@
 # ninja log v5
 3	540	7295138829643863	CMakeFiles/Assignment1.dir/Excercise10.cpp.obj	13e7fdfb022df029
-268	350	7294772862263658	Assignment1.exe	b93353208daa13ce
+51	1478	7314243930361647	CMakeFiles/Assignment1.dir/Analysis_Assign1.2.cpp.obj	b252278aa2df8df0
+27	1009	7314243925666241	CMakeFiles/Assignment1.dir/minheap.cpp.obj	c1504d52dc05d9d3
+3	1015	7314243925656235	CMakeFiles/Assignment1.dir/Lab2Task2.cpp.obj	15bb6d8d0daae233
 10	537	7295138829613851	CMakeFiles/Assignment1.dir/LabTask2.cpp.obj	d2cda9db762bb925
+46	1267	7314243928270117	CMakeFiles/Assignment1.dir/Lab3Task1.cpp.obj	ecf16a13c1b38460
+13	973	7314243925255393	CMakeFiles/Assignment1.dir/maxheap.cpp.obj	69fbf4ae525f1245
+18	975	7314243925174678	CMakeFiles/Assignment1.dir/Assignment2_qn5.cpp.obj	780f9327110cc7d5
+9	1006	7314243925636232	CMakeFiles/Assignment1.dir/Lab2Task1.cpp.obj	77020b5e13844aaa
+23	1303	7314243928606932	CMakeFiles/Assignment1.dir/Assignment2_qn8.cpp.obj	2082b4c437fc9dfe
+42	1365	7314243929252703	CMakeFiles/Assignment1.dir/Midterm_revision.cpp.obj	a0fb823118d528be
+32	1383	7314243929422764	CMakeFiles/Assignment1.dir/Lab4.cpp.obj	89330bb7af4cdfaf
+37	1404	7314243929632756	CMakeFiles/Assignment1.dir/Lab3Task2.cpp.obj	2bc42592d72fbfc1
+62	1780	7314243933391396	CMakeFiles/Assignment1.dir/Analysis_Assign1.1.cpp.obj	378262c5945a9b7e
+0	661	7314618847578815	CMakeFiles/Analysis_Assign1.2.dir/Analysis_Assign1.2.cpp.obj	ab997db608d9f04a
+671	790	7314618848846923	Analysis_Assign1.2.exe	7b3e4b56def0a7b1
+6	737	7314605791413206	CMakeFiles/Analysis_Assign1.2.dir/Analysis_Assign1.1.cpp.obj	64190f6ab9ea0ef2
+0	113	7315404920220103	build.ninja	363ad33633eeb3b9
+3	871	7314618232818978	CMakeFiles/Analysis_Assign1.1.dir/Analysis_Assign1.1.cpp.obj	c88729a1f9b1ef3
+871	1018	7314618234243861	Analysis_Assign1.1.exe	7d734db2b43fd352
