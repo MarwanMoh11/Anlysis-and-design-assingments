@@ -67,6 +67,12 @@ build CMakeFiles/Analysis_Assign1.2.dir/Assignment_3.cpp.obj: CXX_COMPILER__Anal
   OBJECT_DIR = CMakeFiles\Analysis_Assign1.2.dir
   OBJECT_FILE_DIR = CMakeFiles\Analysis_Assign1.2.dir
 
+build CMakeFiles/Analysis_Assign1.2.dir/Lab7.cpp.obj: CXX_COMPILER__Analysis_Assign1.2e2_unscanned_Debug D$:/C++/Assignment1/Lab7.cpp || cmake_object_order_depends_target_Analysis_Assign1.2
+  DEP_FILE = CMakeFiles\Analysis_Assign1.2.dir\Lab7.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Analysis_Assign1.2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Analysis_Assign1.2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Analysis_Assign1.2
@@ -75,7 +81,7 @@ build CMakeFiles/Analysis_Assign1.2.dir/Assignment_3.cpp.obj: CXX_COMPILER__Anal
 #############################################
 # Link the executable Analysis_Assign1.2.exe
 
-build Analysis_Assign1.2.exe: CXX_EXECUTABLE_LINKER__Analysis_Assign1.2e2_Debug CMakeFiles/Analysis_Assign1.2.dir/Analysis_Assign1.2.cpp.obj CMakeFiles/Analysis_Assign1.2.dir/Lab5Task0.cpp.obj CMakeFiles/Analysis_Assign1.2.dir/Assignment_3.cpp.obj
+build Analysis_Assign1.2.exe: CXX_EXECUTABLE_LINKER__Analysis_Assign1.2e2_Debug CMakeFiles/Analysis_Assign1.2.dir/Analysis_Assign1.2.cpp.obj CMakeFiles/Analysis_Assign1.2.dir/Lab5Task0.cpp.obj CMakeFiles/Analysis_Assign1.2.dir/Assignment_3.cpp.obj CMakeFiles/Analysis_Assign1.2.dir/Lab7.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Analysis_Assign1.2.dir
