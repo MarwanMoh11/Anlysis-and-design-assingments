@@ -56,7 +56,7 @@ void print_optimal(const vector<int>& dims) {
 
 
 int main(){
-    vector<int> dims = {30, 35, 15, 5, 10, 20, 25}; // Test case mentioned
+    vector<int> dims = {3, 2, 4, 2, 5}; // Test case mentioned
     cout << "Test case: ";
     for (int dim : dims) {
         cout << dim << " ";
