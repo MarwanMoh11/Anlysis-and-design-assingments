@@ -12,9 +12,9 @@ vector<vector<int>> get_optimal_split(const vector<int>& matrix_dims) {
     vector<vector<int>> DP(n, vector<int>(n, 0)); // Dynamic programming table for memoization
     vector<vector<int>> optimalsplit(n, vector<int>(n, 0)); // Table to store the optimal split
 
-    for (int j = 2; j <= n; j++) {
-        for (int i = 0; i < n - j + 1; i++) {
-            int j = i + j - 1; // end index of subsequence
+    for (int v = 2; v <= n; v++) {
+        for (int i = 0; i < n - v + 1; i++) {
+            int j = i + v - 1; // end index of subsequence
             DP[i][j] = INT_MAX; // Initialize to maximum value
 
             for (int k = i; k < j; k++) {
