@@ -1,65 +1,109 @@
-//
-// Created by Marwan on 3/28/2024.
-//
 #include <iostream>
 #include <vector>
-#include <climits>
+#include <tuple>
+
 using namespace std;
 
-int dist[4][4] = {{0, 20, 42, 25},{20, 0 , 30, 34}, {42, 30, 0, 10}, {25, 34, 10, 0}};
-int n = 4;
-int allCityVisited = (1<<n)-1; //1111
-// (1<<4) results in 16, which in binary is 10000
-// (1<<n)-1 is used to represent the state where all cities have been visited:
-// it results in a number where the n least significant bits are all set to 1
+// Helper function for containsCycle
+bool isCyclicUtil(int v, vector<bool>& visited, vector<bool>& recStack, const vector<vector<pair<int,int>>>& adjList) {
+    // If the current node is not visited
+    if(!visited[v]) {
+        // Mark the current node as visited and add it to the recursion stack
+        visited[v] = true;
+        recStack[v] = true;
 
-int travellingSalesman(int visited_cities, int currCity, vector<vector<int>>& min_distance)
-{
-    if(visited_cities == 0) {
-        return dist[currCity][0]; //dist to return back to starting vertex 0
-    }
-    if(min_distance[visited_cities][currCity] != -1) {
-        return min_distance[visited_cities][currCity];
-    }
-    int ans = INT_MIN;
-    for(int city = 0; city < n; city++) {
-        if((visited_cities&(1<<city)) == 0) {
-            visited_cities = visited_cities | (1<<city);
-
-            //the recursive function call
-            int distAns = dist[currCity][city] + travellingSalesman(visited_cities, city, min_distance);
-            //The function is called with city as the new current city and visited_cities updated to include this city.
-
-            ans = min(ans,distAns);
-            visited_cities = visited_cities & (~(1<<city)); //bitwise AND operator with the bitwise NOT
+        // Go through all the neighbors of the current node
+        for(auto i : adjList[v]) {
+            // If the neighbor is not visited and the recursive call for the neighbor returns true
+            if (!visited[i.first] && isCyclicUtil(i.first, visited, recStack, adjList))
+                return true;
+                // If the neighbor is in the recursion stack
+            else if (recStack[i.first])
+                return true;
         }
     }
-    min_distance[visited_cities][currCity] = ans;
-    return min_distance[visited_cities][currCity];
-    //The minimum distance for the current set of visited cities and current city is updated in the memoization table
+    // Remove the current node from the recursion stack
+    recStack[v] = false;
+    return false;
+}
+
+// Function to check if the graph contains a cycle
+bool containsCycle(const vector<vector<pair<int,int>>>& adjList) {
+    // Get the number of vertices
+    int V = adjList.size();
+    // Create a visited array
+    vector<bool> visited(V, false);
+    // Create a recursion stack
+    vector<bool> recStack(V, false);
+    // Go through all the nodes
+    for(int i = 0; i < V; i++)
+        // If the graph contains a cycle
+        if (isCyclicUtil(i, visited, recStack, adjList))
+            return true;
+    return false;
+}
+
+// Helper function for DFS
+void DFSUtil(int v, vector<bool>& visited, const vector<vector<pair<int,int>>>& adjList) {
+    // Mark the current node as visited and print it
+    visited[v] = true;
+    cout << v << " ";
+
+    // Go through all the neighbors of the current node
+    for(auto i : adjList[v]) {
+        // If the neighbor is not visited
+        if (!visited[i.first])
+            // Call DFSUtil for the neighbor
+            DFSUtil(i.first, visited, adjList);
+    }
+}
+
+// Function to perform a depth-first search on the graph
+void DFS(int start, const vector<vector<pair<int,int>>>& adjList) {
+    // Get the number of vertices
+    int V = adjList.size();
+    // Create a visited array
+    vector<bool> visited(V, false);
+
+    // Call DFSUtil for the starting vertex
+    DFSUtil(start, visited, adjList);
 }
 
 int main() {
-    int ans = INT_MAX;
-    vector<vector<int>> min_distance(16, vector<int>(4, -1)); //16x4 to accommodate all possible states of the problem
-    //The set of cities visited so far is represented as a bitmask,
-    //where the i-th bit is 1 if the i-th city has been visited and 0 otherwise.
-    //Since there are 4 cities, there are 2^4 = 16 possible sets of cities that can be visited.
-    //Hence, the first dimension of the min_distance array is 16.
-    //The current city is represented as an integer between 0 and 3 (inclusive).
-    //Hence, the second dimension of the min_distance array is 4.
+    // Number of vertices and edges
+    int V = 5, E = 7;
+    // List of edges with weights
+    vector<tuple<int, int, int>> edges = {
+            make_tuple(0, 1, 2),
+            make_tuple(0, 4, 1),
+            make_tuple(1, 2, 3),
+            make_tuple(1, 3, 2),
+            make_tuple(1, 4, 2),
+            make_tuple(2, 3, 1),
+            make_tuple(3, 4, 1)
+    };
 
-    //the expression (1<<n) is a bit manipulation operation that uses the bitwise shift left operator <<
-    for(int i = 0; i < (1<<n); i++) //(1<<4) results in 16, which in binary is 10000
-    {
-        for(int j = 0; j < n; j++) {
-            min_distance[i][j] = -1;
-        }
+    // Create an adjacency list
+    vector<vector<pair<int,int>>> adjlist(V);
+    for(auto& edge: edges) {
+        int u, v, w;
+        // Unpack the edge
+        tie(u, v, w) = edge;
+        // Add the edge to the adjacency list
+        adjlist[u].push_back({v, w});
+        adjlist[v].push_back({u, w});
     }
-    int shortestDistance =  travellingSalesman(1, 0, min_distance);//visited_cities=0001, currCity=0
-    cout << "The shortest distance to visit all the cities is " << shortestDistance << endl;
-    return 0;
-}
 
-//The use of dynamic programming and memoization in this function significantly reduces
-//the time complexity from O(n!) in the naive recursive approach to O(n^2 * 2^n)
+    // Check if the graph contains a cycle
+    if(containsCycle(adjlist)) {
+        cout << "Graph contains cycle" << endl;
+    } else {
+        cout << "Graph does not contain cycle" << endl;
+    }
+
+    // Perform a depth-first search on the graph
+    cout << "DFS traversal starting from vertex 0: ";
+    DFS(0, adjlist);
+
+    // Rest of the code
+}
