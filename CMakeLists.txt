@@ -8,5 +8,6 @@ add_executable(Analysis_Assign1.2 Analysis_Assign1.2.cpp
         PracticeSetV_3.cpp
         Assignment2.1.cpp
         Lab8Graph.cpp
+        Tprime.cpp
 
 )
