@@ -6,32 +6,27 @@
 #include <climits>
 using namespace std;
 
-int dist[4][4] = {{0, 20, 42, 25},{20, 0 , 30, 34}, {42, 30, 0, 10}, {25, 34, 10, 0}};
-int n = 4;
-int allCityVisited = (1<<n)-1; //1111
-// (1<<4) results in 16, which in binary is 10000
-// (1<<n)-1 is used to represent the state where all cities have been visited:
-// it results in a number where the n least significant bits are all set to 1
 
-int travellingSalesman(int visited_cities, int currCity, vector<vector<int>>& min_distance)
+
+int travellingSalesman(int visited_cities, int currCity, vector<vector<int>>& min_distance, int n,vector<vector<int>>& dist, int allCityVisited)
 {
-    if(visited_cities == 0) {
+    if(visited_cities == allCityVisited) { //base case modified not = 0 but all the cities visited because we would know the distance to return back to the starting vertex
         return dist[currCity][0]; //dist to return back to starting vertex 0
     }
     if(min_distance[visited_cities][currCity] != -1) {
         return min_distance[visited_cities][currCity];
     }
-    int ans = INT_MIN;
+
+    int ans = INT_MAX; //initialize to the maximum value of an integer at the start of each iteration
     for(int city = 0; city < n; city++) {
         if((visited_cities&(1<<city)) == 0) {
-            visited_cities = visited_cities | (1<<city);
+            int new_visited_cities = visited_cities | (1<<city); //new set of visited cities intialized
 
             //the recursive function call
-            int distAns = dist[currCity][city] + travellingSalesman(visited_cities, city, min_distance);
+            int distAns = dist[currCity][city] + travellingSalesman(new_visited_cities, city, min_distance,n,dist,allCityVisited); // modified to add the new visited variable initialized
             //The function is called with city as the new current city and visited_cities updated to include this city.
 
             ans = min(ans,distAns);
-            visited_cities = visited_cities & (~(1<<city)); //bitwise AND operator with the bitwise NOT
         }
     }
     min_distance[visited_cities][currCity] = ans;
@@ -39,9 +34,29 @@ int travellingSalesman(int visited_cities, int currCity, vector<vector<int>>& mi
     //The minimum distance for the current set of visited cities and current city is updated in the memoization table
 }
 
+
 int main() {
-    int ans = INT_MAX;
-    vector<vector<int>> min_distance(16, vector<int>(4, -1)); //16x4 to accommodate all possible states of the problem
+    int n;
+    int ans = INT_MAX; //initialize to the maximum value of an integer not min that is the bug
+    cout << "Welcome to the Travelling Salesman Problem!" << endl;
+    cout << "Enter the number of cities:";
+    cin >> n;
+    int allCityVisited = (1<<n)-1; //1111
+    vector<vector<int>> dist(n, vector<int>(n, INT_MAX));
+
+    for (int i = 0; i < n; i++) {
+        dist[i][i] = 0;
+    }
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == j) {
+                continue;
+            }
+            cout << "Enter the distance between city " << i << " and city " << j << ":";
+            cin >> dist[i][j];
+        }
+    }
+    vector<vector<int>> min_distance(1 << n, vector<int>(n, -1));//nx4 to accommodate all possible states of the problem
     //The set of cities visited so far is represented as a bitmask,
     //where the i-th bit is 1 if the i-th city has been visited and 0 otherwise.
     //Since there are 4 cities, there are 2^4 = 16 possible sets of cities that can be visited.
@@ -56,7 +71,7 @@ int main() {
             min_distance[i][j] = -1;
         }
     }
-    int shortestDistance =  travellingSalesman(1, 0, min_distance);//visited_cities=0001, currCity=0
+    int shortestDistance =  travellingSalesman(1, 0, min_distance,n,dist, allCityVisited);//visited_cities=0001, currCity=0
     cout << "The shortest distance to visit all the cities is " << shortestDistance << endl;
     return 0;
 }
