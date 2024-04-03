@@ -54,6 +54,7 @@ int main() {
             }
             cout << "Enter the distance between city " << i << " and city " << j << ":";
             cin >> dist[i][j];
+            cout << endl;
         }
     }
     vector<vector<int>> min_distance(1 << n, vector<int>(n, -1));//nx4 to accommodate all possible states of the problem
