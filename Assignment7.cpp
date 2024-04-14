@@ -37,8 +37,8 @@ int digitmax(int k, int swaps) {
 
 int greedychroma(vector<vector<int>>& adj, int V){
     vector<int> results(V,-1);
-    results[0] = 0;
-    int max_color = 1;
+    results[0] = V - 1; // start coloring from the highest degree vertex
+    int max_color = V - 1;
     for(int i = 1; i < V; i++){
         vector<bool> available(V, true);
         for(int j = 0; j < adj[i].size(); j++){
@@ -55,7 +55,7 @@ int greedychroma(vector<vector<int>>& adj, int V){
         }
     }
 
-    return max_color;
+    return max_color + 1; // because the colors are 0 indexed we need to add 1 to get the actual number of colors used
 }
 
 bool graphcoloringhelper(vector<vector<int>>& adj, int V, int m, vector<int>& results, int vertex){
@@ -104,16 +104,12 @@ int main(){
 
 
     vector<vector<int>> adj = {
-            {0, 1, 1, 1, 0, 0, 0, 0},
-            {1, 0, 1, 0, 1, 0, 0, 0},
-            {1, 1, 0, 1, 0, 1, 0, 0},
-            {1, 0, 1, 0, 0, 0, 1, 0},
-            {0, 1, 0, 0, 0, 1, 0, 1},
-            {0, 0, 1, 0, 1, 0, 1, 1},
-            {0, 0, 0, 1, 0, 1, 0, 1},
-            {0, 0, 0, 0, 1, 1, 1, 0}
+            {0, 1, 1, 1},
+            {1, 0, 1, 1},
+            {1, 1, 0, 1},
+            {1, 1, 1, 0}
     };
-    cout << greedychroma(adj, 8) << endl;
-    cout << backtrackingchroma(adj, 8) << endl;
+    cout << greedychroma(adj, 4) << endl;
+    cout << backtrackingchroma(adj, 4) << endl;
     return 0;
 }
