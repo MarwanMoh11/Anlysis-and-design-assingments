@@ -58,5 +58,41 @@ int main() {
     else
         printSolution(sol);
 
+    cout << "----------" <<endl;
+
+    // Maze 2 with a solution
+    int maze_2[N][N] = {
+            {1, 1, 0, 0, 0},
+            {0, 1, 1, 0, 0},
+            {0, 0, 1, 0, 0},
+            {0, 0, 1, 1, 1},
+            {0, 0, 0, 0, 1}
+    };
+
+    int sol_2[N][N] = {{0}};
+
+    if(!R_solve_maze(maze_2, 0, 0, sol_2))
+        cout << "No solution exists for maze_2";
+    else
+        printSolution(sol_2);
+
+    cout << "----------" <<endl;
+
+    // Maze 3 without a solution
+    int maze_3[N][N] = {
+            {1, 1, 0, 0, 0},
+            {0, 1, 0, 0, 0},
+            {0, 1, 0, 0, 0},
+            {0, 1, 0, 0, 0},
+            {0, 1, 1, 0, 1}
+    };
+
+    int sol_3[N][N] = {{0}};
+
+    if(!R_solve_maze(maze_3, 0, 0, sol_3))
+        cout << "No solution exists for maze_3";
+    else
+        printSolution(sol_3);
+
     return 0;
 }
