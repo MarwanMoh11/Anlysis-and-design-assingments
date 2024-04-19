@@ -61,6 +61,24 @@ build CMakeFiles/Assignment2.1.dir/Assignment7.cpp.obj: CXX_COMPILER__Assignment
   OBJECT_DIR = CMakeFiles\Assignment2.1.dir
   OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
 
+build CMakeFiles/Assignment2.1.dir/Labtask10A.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Labtask10A.cpp || cmake_object_order_depends_target_Assignment2.1
+  DEP_FILE = CMakeFiles\Assignment2.1.dir\Labtask10A.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
+
+build CMakeFiles/Assignment2.1.dir/Labtask10B.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Labtask10B.cpp || cmake_object_order_depends_target_Assignment2.1
+  DEP_FILE = CMakeFiles\Assignment2.1.dir\Labtask10B.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
+
+build CMakeFiles/Assignment2.1.dir/Labtask10C.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Labtask10C.cpp || cmake_object_order_depends_target_Assignment2.1
+  DEP_FILE = CMakeFiles\Assignment2.1.dir\Labtask10C.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Assignment2.1
@@ -69,7 +87,7 @@ build CMakeFiles/Assignment2.1.dir/Assignment7.cpp.obj: CXX_COMPILER__Assignment
 #############################################
 # Link the executable Assignment2.1.exe
 
-build Assignment2.1.exe: CXX_EXECUTABLE_LINKER__Assignment2.2e1_Debug CMakeFiles/Assignment2.1.dir/Assignment2Lab.cpp.obj CMakeFiles/Assignment2.1.dir/Assignment7.cpp.obj
+build Assignment2.1.exe: CXX_EXECUTABLE_LINKER__Assignment2.2e1_Debug CMakeFiles/Assignment2.1.dir/Assignment2Lab.cpp.obj CMakeFiles/Assignment2.1.dir/Assignment7.cpp.obj CMakeFiles/Assignment2.1.dir/Labtask10A.cpp.obj CMakeFiles/Assignment2.1.dir/Labtask10B.cpp.obj CMakeFiles/Assignment2.1.dir/Labtask10C.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Assignment2.1.dir
