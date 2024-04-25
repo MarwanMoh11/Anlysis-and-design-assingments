@@ -9,5 +9,7 @@ add_executable(Assignment2.1
         Labtask10A.cpp
         Labtask10B.cpp
         Labtask10C.cpp
+        Lab11task1.cpp
+        Lab11task2.cpp
 
 )
