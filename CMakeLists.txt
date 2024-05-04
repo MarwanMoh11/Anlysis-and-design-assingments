@@ -11,5 +11,6 @@ add_executable(Assignment2.1
         Labtask10C.cpp
         Lab11task1.cpp
         Lab11task2.cpp
+        encode_decode.cpp
 
 )

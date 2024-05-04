@@ -32,7 +32,7 @@ void shortestPath(vector<pair<int, int> > adj[], int V, int src) {
 
             if(dist[u] + wt < dist[v]){
                 dist[v] = dist[u] + wt;
-                pq.push(make_pair(-dist[v], v));
+                pq.push(make_pair(dist[v], v));
             }
         }
     }
@@ -51,30 +51,19 @@ void shortestPath(vector<pair<int, int> > adj[], int V, int src) {
 int main(){
 
     typedef pair<int, int> iPair;
+    vector<iPair> adj[6];
+    addEdge(adj, 0, 1, 2);
+    addEdge(adj, 0, 2, 4);
+    addEdge(adj, 1, 2, 1);
+    addEdge(adj, 1, 3, 7);
+    addEdge(adj, 2, 4, 3);
+    addEdge(adj, 3, 4, 2);
+    addEdge(adj, 3, 5, 1);
+    addEdge(adj, 4, 5, 5);
 
-        int V = 5; // number of vertices
-        vector<pair<int,int>> adj[V]; // adjacency list
+    int src = 0;
 
-        int graph[5][5] = {
-                {0, 3, 2, INT_MAX, INT_MAX},
-                {3, 0, INT_MAX, 5, INT_MAX},
-                {2, INT_MAX, 0, 7, 1},
-                {INT_MAX, 5, 7, 0, 4},
-                {INT_MAX, INT_MAX, 1, 4, 0}
-        };
-
-        for(int i = 0; i < V; i++) {
-            for(int j = 0; j < V; j++) {
-                if(graph[i][j] != INT_MAX) {
-                    addEdge(adj, i, j, graph[i][j]);
-                }
-            }
-        }
-
-
-    int src = 1;
-
-    shortestPath(adj, 5, src);
+    shortestPath(adj, 6, src);
 
     return 0;
 }
