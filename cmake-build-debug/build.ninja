@@ -41,79 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/C++/Assignment1/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Assignment2.1
+# Object build statements for EXECUTABLE target Assignment2.2
 
 
 #############################################
-# Order-only phony target for Assignment2.1
+# Order-only phony target for Assignment2.2
 
-build cmake_object_order_depends_target_Assignment2.1: phony || CMakeFiles/Assignment2.1.dir
+build cmake_object_order_depends_target_Assignment2.2: phony || CMakeFiles/Assignment2.2.dir
 
-build CMakeFiles/Assignment2.1.dir/Assignment2Lab.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Assignment2Lab.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\Assignment2Lab.cpp.obj.d
+build CMakeFiles/Assignment2.2.dir/Assignment2.2.cpp.obj: CXX_COMPILER__Assignment2.2e2_unscanned_Debug D$:/C++/Assignment1/Assignment2.2.cpp || cmake_object_order_depends_target_Assignment2.2
+  DEP_FILE = CMakeFiles\Assignment2.2.dir\Assignment2.2.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
+  OBJECT_DIR = CMakeFiles\Assignment2.2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment2.2.dir
 
-build CMakeFiles/Assignment2.1.dir/Assignment7.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Assignment7.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\Assignment7.cpp.obj.d
+build CMakeFiles/Assignment2.2.dir/interviewmaze.cpp.obj: CXX_COMPILER__Assignment2.2e2_unscanned_Debug D$:/C++/Assignment1/interviewmaze.cpp || cmake_object_order_depends_target_Assignment2.2
+  DEP_FILE = CMakeFiles\Assignment2.2.dir\interviewmaze.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
-
-build CMakeFiles/Assignment2.1.dir/Labtask10A.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Labtask10A.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\Labtask10A.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
-
-build CMakeFiles/Assignment2.1.dir/Labtask10B.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Labtask10B.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\Labtask10B.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
-
-build CMakeFiles/Assignment2.1.dir/Labtask10C.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Labtask10C.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\Labtask10C.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
-
-build CMakeFiles/Assignment2.1.dir/Lab11task1.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Lab11task1.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\Lab11task1.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
-
-build CMakeFiles/Assignment2.1.dir/Lab11task2.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/Lab11task2.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\Lab11task2.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
-
-build CMakeFiles/Assignment2.1.dir/encode_decode.cpp.obj: CXX_COMPILER__Assignment2.2e1_unscanned_Debug D$:/C++/Assignment1/encode_decode.cpp || cmake_object_order_depends_target_Assignment2.1
-  DEP_FILE = CMakeFiles\Assignment2.1.dir\encode_decode.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Assignment2.1.dir
+  OBJECT_DIR = CMakeFiles\Assignment2.2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment2.2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Assignment2.1
+# Link build statements for EXECUTABLE target Assignment2.2
 
 
 #############################################
-# Link the executable Assignment2.1.exe
+# Link the executable Assignment2.2.exe
 
-build Assignment2.1.exe: CXX_EXECUTABLE_LINKER__Assignment2.2e1_Debug CMakeFiles/Assignment2.1.dir/Assignment2Lab.cpp.obj CMakeFiles/Assignment2.1.dir/Assignment7.cpp.obj CMakeFiles/Assignment2.1.dir/Labtask10A.cpp.obj CMakeFiles/Assignment2.1.dir/Labtask10B.cpp.obj CMakeFiles/Assignment2.1.dir/Labtask10C.cpp.obj CMakeFiles/Assignment2.1.dir/Lab11task1.cpp.obj CMakeFiles/Assignment2.1.dir/Lab11task2.cpp.obj CMakeFiles/Assignment2.1.dir/encode_decode.cpp.obj
+build Assignment2.2.exe: CXX_EXECUTABLE_LINKER__Assignment2.2e2_Debug CMakeFiles/Assignment2.2.dir/Assignment2.2.cpp.obj CMakeFiles/Assignment2.2.dir/interviewmaze.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Assignment2.1.dir
+  OBJECT_DIR = CMakeFiles\Assignment2.2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Assignment2.1.exe
-  TARGET_IMPLIB = libAssignment2.1.dll.a
-  TARGET_PDB = Assignment2.1.exe.dbg
+  TARGET_FILE = Assignment2.2.exe
+  TARGET_IMPLIB = libAssignment2.2.dll.a
+  TARGET_PDB = Assignment2.2.exe.dbg
 
 
 #############################################
@@ -141,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Assignment2.1: phony Assignment2.1.exe
+build Assignment2.2: phony Assignment2.2.exe
 
 # =============================================================================
 # Folder targets.
@@ -151,7 +115,7 @@ build Assignment2.1: phony Assignment2.1.exe
 #############################################
 # Folder: D:/C++/Assignment1/cmake-build-debug
 
-build all: phony Assignment2.1.exe
+build all: phony Assignment2.2.exe
 
 # =============================================================================
 # Built-in targets

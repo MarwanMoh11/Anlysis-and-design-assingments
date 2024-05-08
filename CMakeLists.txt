@@ -3,14 +3,8 @@ project(Assignment1)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Assignment2.1
-        Assignment2Lab.cpp
-        Assignment7.cpp
-        Labtask10A.cpp
-        Labtask10B.cpp
-        Labtask10C.cpp
-        Lab11task1.cpp
-        Lab11task2.cpp
-        encode_decode.cpp
+add_executable(Assignment2.2
+        Assignment2.2.cpp
+        Marwan_Abudaif_BT_Maze.cpp
 
 )
