@@ -67,6 +67,12 @@ build CMakeFiles/Assignment2.2.dir/Interviewrefai.cpp.obj: CXX_COMPILER__Assignm
   OBJECT_DIR = CMakeFiles\Assignment2.2.dir
   OBJECT_FILE_DIR = CMakeFiles\Assignment2.2.dir
 
+build CMakeFiles/Assignment2.2.dir/Marwan_Abudaif_BT_Hurdles.cpp.obj: CXX_COMPILER__Assignment2.2e2_unscanned_Debug D$:/C++/Assignment1/Marwan_Abudaif_BT_Hurdles.cpp || cmake_object_order_depends_target_Assignment2.2
+  DEP_FILE = CMakeFiles\Assignment2.2.dir\Marwan_Abudaif_BT_Hurdles.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Assignment2.2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignment2.2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Assignment2.2
@@ -75,7 +81,7 @@ build CMakeFiles/Assignment2.2.dir/Interviewrefai.cpp.obj: CXX_COMPILER__Assignm
 #############################################
 # Link the executable Assignment2.2.exe
 
-build Assignment2.2.exe: CXX_EXECUTABLE_LINKER__Assignment2.2e2_Debug CMakeFiles/Assignment2.2.dir/Assignment2.2.cpp.obj CMakeFiles/Assignment2.2.dir/Marwan_Abudaif_BT_Maze.cpp.obj CMakeFiles/Assignment2.2.dir/Interviewrefai.cpp.obj
+build Assignment2.2.exe: CXX_EXECUTABLE_LINKER__Assignment2.2e2_Debug CMakeFiles/Assignment2.2.dir/Assignment2.2.cpp.obj CMakeFiles/Assignment2.2.dir/Marwan_Abudaif_BT_Maze.cpp.obj CMakeFiles/Assignment2.2.dir/Interviewrefai.cpp.obj CMakeFiles/Assignment2.2.dir/Marwan_Abudaif_BT_Hurdles.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Assignment2.2.dir

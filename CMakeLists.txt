@@ -7,5 +7,6 @@ add_executable(Assignment2.2
         Assignment2.2.cpp
         Marwan_Abudaif_BT_Maze.cpp
         Interviewrefai.cpp
+        Marwan_Abudaif_BT_Hurdles.cpp
 
 )
