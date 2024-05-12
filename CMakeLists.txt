@@ -8,5 +8,8 @@ add_executable(Assignment2.2
         Marwan_Abudaif_BT_Maze.cpp
         Interviewrefai.cpp
         Marwan_Abudaif_BT_Hurdles.cpp
+        test.cpp
+        Qod.cpp
+        Painting_fences.cpp
 
 )
